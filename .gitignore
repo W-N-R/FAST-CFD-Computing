@@ -1,0 +1,57 @@
+# ─────────────────────────────────────────────────────────────
+# FAST-CFD-Computing — what NOT to publish
+# These patterns keep build junk and oversized files out of GitHub.
+# Nothing here is deleted from your disk — it's just never pushed.
+# ─────────────────────────────────────────────────────────────
+
+# ── Oversized: GitHub hard-rejects any single file > 100 MB ──
+# 274 MB scanned book — compress or host externally, then re-add.
+**/Pak Studies by M R Kazmi *.pdf
+
+# ── Visual Studio / C++ build output (students dumped whole projects) ──
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ww]in32/
+.vs/
+ipch/
+*.exe
+*.dll
+*.pdb
+*.obj
+*.o
+*.ilk
+*.idb
+*.ipch
+*.iobj
+*.ipdb
+*.tlog
+*.log
+*.suo
+*.sdf
+*.opensdf
+*.user
+*.vsidx
+*.lastbuildstate
+*.recipe
+*.lock
+*.cache
+*.res
+*.tmp
+*.enc
+
+# ── Archives (opaque, bulky — usually project source dumps) ──
+# Remove this line if you want to keep specific .zip files, then
+# force-add them with:  git add -f "path/to/keep.zip"
+*.zip
+*.rar
+*.7z
+
+# ── OS / editor cruft ──
+Thumbs.db
+desktop.ini
+.DS_Store
+*~
